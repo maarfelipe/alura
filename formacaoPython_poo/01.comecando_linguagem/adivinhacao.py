@@ -11,7 +11,7 @@ pontos = 1000
 print('[1] Fácil\n'
       '[2] Médio\n'
       '[3] Difícil')
-nivel = input(int('Digite o nível de dificuldade: '))
+nivel = int(input('Digite o nível de dificuldade: '))
 
 if nivel == 1:
     total_de_tentativas = 20
