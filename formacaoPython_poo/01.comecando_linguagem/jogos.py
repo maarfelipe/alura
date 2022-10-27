@@ -12,11 +12,12 @@ def escolhe_jogo():
                      'Digite o código do jogo: '))
 
     if jogo == 1:
-          print('Jogando Forca')
-          forca.jogar()
+        print('Jogando Forca')
+        forca.jogar()
     elif jogo == 2:
-          print('Jogando Adivinhacao')
-          adivinhacao.jogar()
+        print('Jogando Adivinhacao')
+        adivinhacao.jogar()
 
-if (__name__ == '__main__'):
+
+if __name__ == '__main__':
     escolhe_jogo()
