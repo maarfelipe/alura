@@ -8,6 +8,15 @@ def jogar():
     acertou = enforcou = False
 
     while not acertou and not enforcou:
+
+        chute = input('Digite uma letra: ')
+
+        index = 0
+        for letra in palavra_secreta:
+            if chute == letra:
+                print(f'Encontrei a letra {letra} na posição {index}')
+            index += 1
+
         print('Jogando ...')
 
     print('Fim do jogo!')
