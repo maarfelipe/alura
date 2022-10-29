@@ -17,7 +17,7 @@ A ideia é que todas as suas tarefas possam ser distribuídas em quadrantes, div
 
 Cada quadrante corresponde às tarefas:
 
-	-	De muita importância e muita urgência: Crises.
+	-   De muita importância e muita urgência: Crises.
 	-   De muita importância, mas pouca urgência: Metas e planejamentos.
 	-   De pouca importância, mas muita urgência: Interrupções.
 	-   De pouco importância e pouca urgência: Distrações.
