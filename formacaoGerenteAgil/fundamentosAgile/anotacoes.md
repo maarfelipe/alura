@@ -36,4 +36,12 @@ Defina suas tarefas dentro de cada quadrante:
 	- Defina o critério de priorização
 	- Estabeleça um fluxo que priorize a resolução desse problema, ou seja, foque no que é mais importante
 
+- Feedback
+
+São as avaliações e críticas sobre os resultados obtidos até então.
+
+---
+1. Primeiro **priorizamos** as tarefas que vão gerar o objetivo final
+2. Depois, definimos o **fluxo** de trabalho, dividindo por etapas ou finalidades
+3. Ao entregar a etapa, analisamos os **feedbacks**
 
