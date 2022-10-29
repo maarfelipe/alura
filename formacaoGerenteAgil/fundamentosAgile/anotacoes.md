@@ -28,3 +28,12 @@ Defina suas tarefas dentro de cada quadrante:
 	-   Metas e planos: programe-se para fazer, e tente reservar um tempo para isso.
 	-   Interrupções: delegue ou faça apenas o que não for atrapalhar seu trabalho.
 	-   Distrações: ignore.
+
+- Fluxo
+	- Defina o projeto e seu objetivo final
+	- Defina o que você quer solucionar com esse projeto
+	- Divida o projeto em metas/tarefas para atingir o objetivo final
+	- Defina o critério de priorização
+	- Estabeleça um fluxo que priorize a resolução desse problema, ou seja, foque no que é mais importante
+
+
