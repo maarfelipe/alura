@@ -1,18 +1,4 @@
-def criaConta(numero, titular, saldo, limite):
-    conta = {'numero': numero,
-             'titular': titular,
-             'saldo': saldo,
-             'limite': limite}
-    return conta
+from datas import Data
 
-
-def depositar(conta, valor):
-    conta['saldo'] += valor
-
-
-def sacar(conta, valor):
-    conta['saldo'] -= valor
-
-
-def extrato(conta):
-    print(f'Saldo é R$ {conta["saldo"]}')
+d = Data(21, 11, 2007)
+d.formatada()
