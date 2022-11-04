@@ -15,7 +15,7 @@ class Conta:
         self.__saldo = saldo
         self.__limite = limite
 
-    # metodos
+    # métodos
     def extrato(self):
         '''
         Método demonstrativo para acessar um atributo da conta
@@ -43,8 +43,28 @@ class Conta:
         '''
         Acessa duas contas para fazer uma transferência de valores entre elas
         :param valor: recebe qual o valor será transferido
-        :param contaDestino: parâmetro que define qual conta vai receber a trasnferência
+        :param contaDestino: parâmetro que define qual conta vai receber a transferência
         :return: altera o saldo nas duas contas
         '''
         self.sacar(valor)
         contaDestino.depositar(valor)
+
+    # getters
+    @property
+    def saldo(self):
+        return self.__saldo
+
+    @property
+    def titular(self):
+        return self.__titular
+
+    @property
+    def limite(self):
+        return self.__limite
+
+    # setters
+    @limite.setter
+    def limite(self, limite):
+        self.__limite = limite
+
+#
