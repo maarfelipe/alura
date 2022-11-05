@@ -25,16 +25,12 @@ class Programa:
 class Filme(Programa):
     # atributos e construtor
     def __init__(self, nome, ano, duracao):
-        self.__nome = nome.title()
-        self.ano = ano
+        super().__init__(nome, ano)
         self.duracao = duracao
-        self._likes = 0
 
 
 class Serie(Programa):
     # atributos e construtor
     def __init__(self, nome, ano, temporadas):
-        self.__nome = nome.title()
-        self.ano = ano
+        super().__init__(nome, ano)
         self.temporadas = temporadas
-        self._likes = 0
