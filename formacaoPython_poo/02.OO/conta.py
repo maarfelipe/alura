@@ -31,13 +31,26 @@ class Conta:
         '''
         self.__saldo += valor
 
+    def __validar_saque(self, valor):
+        '''
+        Recebe um valor e verifica se este é menor que a soma entre saldo e limite para autorizar o saque
+        :param valor: valor a somar com o limite
+        :return: True se o valor for menor que a soma, False caso contrário
+        '''
+        valor_disponivel = self.__saldo + self.__limite
+        return valor <= valor_disponivel
+
     def sacar(self, valor):
         '''
-        Recebe um valor e o diminui do saldo da conta
-        :param valor: recebe o valor que será subtraído
-        :return: atualiza o valor do saldo
+        Subtrai da conta o valor solicitado caso __validar_saque seja True
+        :param valor: valor solicitado para saque
+        :return: none
         '''
-        self.__saldo -= valor
+        if self.__validar_saque(valor):
+            self.__saldo -= valor
+            print('Saque efetuado')
+        else:
+            print('O valor solicitado está acima do limite')
 
     def transferir(self, valor, contaDestino):
         '''
