@@ -28,12 +28,19 @@ class Filme(Programa):
         super().__init__(nome, ano)
         self.duracao = duracao
 
+    def imprimir(self):
+        print(f'{self.nome:<30} | {self.ano} | {self.duracao:<3} | {self.likes} Likes')
+
 
 class Serie(Programa):
     # atributos e construtor
     def __init__(self, nome, ano, temporadas):
         super().__init__(nome, ano)
         self.temporadas = temporadas
+
+    def imprimir(self):
+        print(f'{self.nome:<30} | {self.ano} | {self.temporadas:<3} | {self.likes} Likes')
+
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 vingadores.darLike()
@@ -45,5 +52,4 @@ atlanta.darLike()
 listasFilmesSeries = [vingadores, atlanta]
 
 for programa in listasFilmesSeries:
-    detalhes = programa.duracao if hasattr(programa, 'duracao') else programa.temporadas
-    print(f'{programa.nome} | {detalhes} | {programa.likes}')
+    programa.imprimir()
