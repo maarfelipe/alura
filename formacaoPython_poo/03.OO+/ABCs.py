@@ -1,4 +1,4 @@
-from collections.abc import MutableSequence
+from collections.abc import MutableSequence # Abstract Base Classes
 
 
 class MinhaListinhaMutavel(MutableSequence):
