@@ -1,4 +1,4 @@
-url = "bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar"
+url = 'bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar'
 
 # sanitização e validação da URL
 if url == ''.strip():
