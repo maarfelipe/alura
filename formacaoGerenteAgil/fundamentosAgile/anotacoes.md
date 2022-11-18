@@ -45,3 +45,14 @@ São as avaliações e críticas sobre os resultados obtidos até então.
 2. Depois, definimos o **fluxo** de trabalho, dividindo por etapas ou finalidades
 3. Ao entregar a etapa, analisamos os **feedbacks**
 
+## Valores do manifesto ágil:
+
+ - os **individuos** e as **interações** entre eles são mais importantes que os processos e ferramentas
+ - **software funcinando** é mais importante que documentação compreensiva
+ - **colaboração com o cliente** é mais importante que negociação de contrato
+ - **responder às mudanças** é mais importante que seguir um plano
+
+[Agile Manifesto](http://agilemanifesto.org/iso/ptbr/manifesto.html)
+[os 12 princípios](http://agilemanifesto.org/iso/ptbr/principles.html)
+
+
