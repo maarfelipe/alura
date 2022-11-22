@@ -4,10 +4,13 @@ class ExtratorURL:
         self.validarUrl()
 
     def sanitizarUrl(self, url):
-        return url.strip()
+        if type(self.url) == str:
+            return url.strip()
+        else:
+            return ''
 
     def validarUrl(self):
-        if self.url == '':
+        if not self.url:
             raise ValueError('A URL está vazia')
 
     def getUrlBase(self):
