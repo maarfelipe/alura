@@ -1,6 +1,6 @@
 import re
 
-url = 'https://www.bytebank.com.br/cambio'
+url = 'bytebank.com/cambio'
 
 padraoURL = re.compile('(http(s)?://)?(www.)?bytebank.com(.br)?/cambio')
 match = padraoURL.match(url)

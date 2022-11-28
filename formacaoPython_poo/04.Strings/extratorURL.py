@@ -7,7 +7,7 @@ class ExtratorURL:
         self.validarUrl()
 
     def sanitizarUrl(self, url):
-        if type(self.url) == str:
+        if type(url) == str:
             return url.strip()
         else:
             return ''
@@ -41,8 +41,20 @@ class ExtratorURL:
             valor = self.getUrlParametros()[indiceValor:eComercial]
         return valor
 
+    def __len__(self):
+        return len(self.url)
+
+    def __str__(self):
+        return f'{self.url}\n' \
+               f'Parâmetros: {self.getUrlParametros()}\n' \
+               f'URL Base: {self.getUrlBase()}'
+
+    def __eq__(self, other):
+        return self.url == other.url
+
 
 extratorUrl = ExtratorURL('bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar')
+print(f'O tamanho da URL é {len(extratorUrl)}')
 
-valorQuantidade = extratorUrl.getValorParametros('quantidade')
-print(valorQuantidade)
+# valorQuantidade = extratorUrl.getValorParametros('quantidade')
+# print(valorQuantidade)
