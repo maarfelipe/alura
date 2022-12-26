@@ -1,16 +1,12 @@
 from django.shortcuts import render
+from .models import Receita
 
 
 def index(request):
-
-    receitas = {
-        1: 'Receita1',
-        2: 'Receita2',
-        3: 'Receita3'
-    }
+    receitas = Receita.objects.all()
 
     dados = {
-        'nome_das_receitas': receitas
+        'receitas': receitas
     }
 
     return render(request, 'index.html', dados)
