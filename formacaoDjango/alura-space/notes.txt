@@ -67,4 +67,9 @@
 2 - no arquivo .html criar a rota na tag href da seguinte forma:
     {% url 'nome_utilizado_no_path' %}
 
+|--------------------- DRY --------------------|
 
+1 - retirar as partes duplicadas dos códigos .html e inserir em um arquivo externo. ex: base.html
+2 - {% extends 'caminho_do_arquivo_dry.html' %} deve ser colocado no local da parte retirada do arquivo .html
+3 - nas pages originais utilizar {% block content %} para marcar início do bloco e {% endblock %} ao fim
+4 - no arquivo DRY utilizar {% block content %} {% endblock %} para especificar o local onde haverá conteúdo da outra page
