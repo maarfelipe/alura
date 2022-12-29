@@ -73,3 +73,11 @@
 2 - {% extends 'caminho_do_arquivo_dry.html' %} deve ser colocado no local da parte retirada do arquivo .html
 3 - nas pages originais utilizar {% block content %} para marcar início do bloco e {% endblock %} ao fim
 4 - no arquivo DRY utilizar {% block content %} {% endblock %} para especificar o local onde haverá conteúdo da outra page
+
+|------------------ PARTIALS ------------------|
+
+1 - criar uma pasta partials dentro de templates
+2 - os arquivos por convenção devem ser nomeados _assim.html
+3 - buscar nos arquivos .html as partes iguais, recortar e colocar no arquivo partial. ex: <footer>
+4 - no local onde deve aparecer o conteúdo da partial incluir o código da seguinte forma:
+    {% include 'galeria/partials/_exemplo.html' %}
