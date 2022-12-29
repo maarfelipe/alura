@@ -42,7 +42,7 @@
 
 |---------- INSERINDO CÓDIGOS FRONT -----------|
 
-1 - criar uma pasta templates na roo do projeto
+1 - criar uma pasta templates na root do projeto
 2 - dentro de TEMPLATES/DIRS no arquivo settings.py informar a pasta templates criada
     'DIRS': [os.path.join(BASE_DIR, 'templates')],
 
@@ -60,7 +60,7 @@
     comando que coleta os arquivos na pasta static do projeto e cria a pasta static no root
 4 - no arquivos de front que contém arquivos estáticos colocar os seguintes comandos:
     {% load static %} -> no início do arquivo
-    ""{% static 'caminho_absolutdo_do_arquivo_estático' %}""
+    "{% static 'caminho_absolutdo_do_arquivo_estático' %}"
 
 |------------------ URL NAME ------------------|
 
