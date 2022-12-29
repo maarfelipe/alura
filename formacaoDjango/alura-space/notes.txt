@@ -33,3 +33,7 @@
 1 - python manage.py startapp galeria
     (galeria é o nome do app escolhido)
 2 - todos os novos apps devem ser inseridos em INSTALLED_APPS no arquivo settings.py
+
+|---------------- VIEWS E URLs ----------------|
+1 - criar funções específicas para mostrar as informações em views.py
+2 - as rotas são definidas no arquivo urls.py do projeto
