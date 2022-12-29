@@ -1,0 +1,35 @@
+|---------- CRIANDO UM NOVO AMBIENTE ----------|
+
+1 - virtualenv venv para criar o ambiente virtual
+2 - /venv/Scripts/activate.bat para acessar o ambiente virtual
+3 - pip install django
+4 - pip freeze > requirements.txt para criar um arquivo com todas as dependências do projeto
+    (passo importante a ser realizado toda vez que for instalado um novo pacote no ambiente virtual
+5 - django-admin startproject setup .
+    (django-admin startproject é o comando interno do django para iniciar um novo projeto
+    setup será o nome da pasta principal do projeto
+    o . indica que a pasta setup ficará no root do diretório, não criando uma pasta e colocando-o dentro)
+
+|------------- INICIANDO O PROJETO ------------|
+
+1 - python manage.py runserver
+2 - alterar o timezone e o idioma em settings.py
+
+|----- PREPARANDO O PROJETO PARA VERSIONAR ----|
+
+1 - pip install python-dotenv
+2 - criar um arquivo na pasta root chamado .env onde serão colocadas as varíáveis de ambiente
+3 - copiar a linha toda da SECRET_KEY do arquivo settings.py para o arquivo .env
+4 - remover as aspas da string no arquivo .env
+5 - apagar o conteúdo da variável SECRET_KEY no arquivo settings.py
+6 - importar os, e from dotenv import load_dotenv no arquivo settings.py
+7 - chamar load_dotenv() abaixo da importação
+8 - SECRET_KEY = str(os.getenv('SECRET_KEY')) no arquivo settings.py
+    (o comando busca no arquivo .env o conteúdo da variável SECRET_KEY)
+9 - acessar https://gitignore.io/, buscar por django e colar o conteúdo da pesquisa no arquivo gitignore
+
+|------------- CRIANDO UM NOVO APP ------------|
+
+1 - python manage.py startapp galeria
+    (galeria é o nome do app escolhido)
+2 - todos os novos apps devem ser inseridos em INSTALLED_APPS no arquivo settings.py
