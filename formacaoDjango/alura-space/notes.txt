@@ -38,3 +38,9 @@
 1 - criar funções específicas para mostrar as informações em views.py
 2 - as rotas são definidas no arquivo urls.py do projeto
 3 - BOA PRÁTICA: isolar as URLs de cada app num arquivo urls.py dentro de cada app e importá-lo no urls.py do projeto
+
+|---------- INSERINDO CÓDIGOS FRONT -----------|
+1 - criar uma pasta templates na roo do projeto
+2 - dentro de TEMPLATES/DIRS no arquivo settings.py informar a pasta templates criada
+    'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
