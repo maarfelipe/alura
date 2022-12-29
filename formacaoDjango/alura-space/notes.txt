@@ -61,4 +61,10 @@
     {% load static %} -> no início do arquivo
     ""{% static 'caminho_absolutdo_do_arquivo_estático' %}""
 
+|------------------ URL NAME ------------------|
+
+1 - no arquivo urls.py do app que deseja criar a conexão, atribuir um nome ao path
+2 - no arquivo .html criar a rota na tag href da seguinte forma:
+    {% url 'nome_utilizado_no_path' %}
+
 
