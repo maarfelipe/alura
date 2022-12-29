@@ -40,7 +40,25 @@
 3 - BOA PRÁTICA: isolar as URLs de cada app num arquivo urls.py dentro de cada app e importá-lo no urls.py do projeto
 
 |---------- INSERINDO CÓDIGOS FRONT -----------|
+
 1 - criar uma pasta templates na roo do projeto
 2 - dentro de TEMPLATES/DIRS no arquivo settings.py informar a pasta templates criada
     'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+|------ CARREGANDO OS ARQUIVOS ESTATICOS ------|
+
+1 - criar uma pasta chamada static na pasta do projeto e colocar todos os arquivos estáticos dentro dela
+2 - no arquivo settings.py, abaixo de STATIC_URL = 'static/' adicionar:
+    indicando onde os arquivos estáticos estão:
+        STATICFILES_DIRS = [
+            os.path.join(BASE_DIR, 'setup/static')
+        ]
+    o caminho absoluto pro diretório onde o python vai coletar os arquivos para fazer a implantação
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+3 - python manage.py collectstatic
+    comando que coleta os arquivos na pasta static do projeto e cria a pasta static no root
+4 - no arquivos de front que contém arquivos estáticos colocar os seguintes comandos:
+    {% load static %} -> no início do arquivo
+    ""{% static 'caminho_absolutdo_do_arquivo_estático' %}""
+
 
