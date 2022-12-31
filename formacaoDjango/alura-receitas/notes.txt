@@ -82,3 +82,26 @@
 3 - buscar nos arquivos .html as partes iguais, recortar e colocar no arquivo partial. ex: <footer>
 4 - no local onde deve aparecer o conteúdo da partial incluir o código da seguinte forma:
     {% include 'galeria/partials/_exemplo.html' %}
+
+|--------------- CONECTANDO DB ----------------|
+
+1 - neste modelo usaremos o postgre:
+    pip install psycopg2
+    pip install psycopg2-binary
+2 - alterar no arquivo settings.py as configurações para o postgre
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'alura_receita',
+            'USER': 'postgres',
+            'PASSWORD': 'y59*m3Ap',
+            'HOST': 'localhost'
+        }
+    }
+
+|--------------- CRIANDO MODELS ---------------|
+
+1 - criar classes das tabelas com as respectivas colunas utilizando o models
+2 - após criar o padrão da tabela, utilizar os comandos django para enviar a tabela ao DB:
+    python manage.py makemigrations
+    python manage.py migrate
