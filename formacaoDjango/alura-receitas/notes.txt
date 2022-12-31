@@ -116,3 +116,4 @@
 
 1 - no arquivo views.py configurar nas funções o que deseja exibir
 2 - atribuir cada valor que deve ser exibido nos arquivos .html
+3 -
