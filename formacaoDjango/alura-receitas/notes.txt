@@ -105,3 +105,9 @@
 2 - após criar o padrão da tabela, utilizar os comandos django para enviar a tabela ao DB:
     python manage.py makemigrations
     python manage.py migrate
+3 - registrar o modelo no arquivo admin.py (a tabela deverá aparecer no admin do site após este processo)
+4 - a class ExibirReceita foi criado para que o nome da receitaseja exibido ao invés de 'receita object(1)' no admin do site
+
+|----------------- SUPER USER -----------------|
+
+1 - python manage.py createsuperuser
