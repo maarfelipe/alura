@@ -116,3 +116,8 @@
 
 1 - no arquivo views.py configurar nas funções o que deseja exibir
 2 - atribuir cada valor que deve ser exibido nos arquivos .html
+
+|--------------------- FK ---------------------|
+
+1 - para vincular duas tabelas, utilizamos o conceito de foreign key do DB
+2 - neste exemplo, atribuimos uma pessoa para cada receita. Arquivo models.py de receitas
