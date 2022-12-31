@@ -106,7 +106,7 @@
     python manage.py makemigrations
     python manage.py migrate
 3 - registrar o modelo no arquivo admin.py (a tabela deverá aparecer no admin do site após este processo)
-4 - a class ExibirReceita foi criado para que o nome da receitaseja exibido ao invés de 'receita object(1)' no admin do site
+4 - a class ExibirReceita foi criado para que o nome da receita seja exibido ao invés de 'receita object(1)' no admin do site
 
 |----------------- SUPER USER -----------------|
 
@@ -116,4 +116,3 @@
 
 1 - no arquivo views.py configurar nas funções o que deseja exibir
 2 - atribuir cada valor que deve ser exibido nos arquivos .html
-3 -
