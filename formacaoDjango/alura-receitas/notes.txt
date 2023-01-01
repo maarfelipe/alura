@@ -121,3 +121,10 @@
 
 1 - para vincular duas tabelas, utilizamos o conceito de foreign key do DB
 2 - neste exemplo, atribuimos uma pessoa para cada receita. Arquivo models.py de receitas
+
+|------------ ADICIONANDO IMAGENS -------------|
+
+1 - no models.py adicionar o campo que vai receber a foto no admin do site
+2 - no setting.py aplicar as configurações de MEDIA indicando local das imagens
+3 - pip install pillow
+4 - realizar migratinos e migrate
